@@ -1,1 +1,1 @@
-Hi! This is the repo for my personal portfolio website @ nikitaneeli.com
+Hi! Here you can see the code for my personal portfolio website @ nikitaneeli.com

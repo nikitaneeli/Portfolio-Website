@@ -1,0 +1,25 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: rgb(255, 247, 249);
+}
+
+h1 {
+  font-size: 3rem;
+  color: rgb(32, 146, 195);
+}
+
+#central {
+  width: 30rem;
+  height: 30rem;
+  /*
+  background-image: url(icon.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  */
+  background: radial-gradient(circle, rgb(217, 72, 106), orange, yellow);
+  border-radius: 50%;
+}

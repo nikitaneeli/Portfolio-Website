@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nikita Neeli | Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon2.png" />
+    <link href="main.css" rel="stylesheet" />
+  </head>
+
+  <body id="top">
+    <div class="sticky-bar">
+      <span class="sticky-name"></span><span class="cursor">|</span>
+    </div>
+
+    <!-- Three doil nav buttons -->
+    <div class="doily-nav">
+      <a href="index.html" class="doily-link">
+        <div class="doily">
+          <img src="assets/images/doil.jpg" alt="Home doily" />
+          <span class="doily-text">home</span>
+        </div>
+      </a>
+
+      <a href="projects.html" class="doily-link">
+        <div class="doily">
+          <img src="assets/images/doil.jpg" alt="Projects doily" />
+          <span class="doily-text">projects</span>
+        </div>
+      </a>
+
+      <a href="experience.html" class="doily-link">
+        <div class="doily">
+          <img src="assets/images/doil.jpg" alt="Experience doily" />
+          <span class="doily-text">experience</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- About me section -->
+    <div class="content-container">
+      <div class="photo-box">
+        <img src="assets/images/headshot.jpg" alt="Photo of me" />
+      </div>
+
+      <div class="about-box">
+        <h1 class="my-name">Hello!</h1>
+        <p class="about-text">
+          I'm Nikita, an Honors Computer Science junior at the University of
+          Georgia focused on full-stack development, data science, and
+          healthcare research.
+        </p>
+        <p class="about-text">
+          View my
+          <a href="assets/Resume 26-27.pdf" class="nmixprojects-link">resume</a>
+          and learn more about my skills and experience by exploring this
+          website and checking out my work for
+          <a href="nmixprojects.html" class="nmixprojects-link">NMIX 4020!</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- my skills section -->
+    <div class="skills-folder">
+      <div class="folder-tabs">
+        <button
+          class="folder-tab active"
+          onclick="switchTab('languages', this)"
+        >
+          languages
+        </button>
+        <button class="folder-tab" onclick="switchTab('frameworks', this)">
+          frameworks & libraries
+        </button>
+        <button class="folder-tab" onclick="switchTab('tools', this)">
+          tools & platforms
+        </button>
+      </div>
+      <div class="folder-body">
+        <div class="folder-panel active" id="languages">
+          <span class="skill-pill">Java</span>
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">SQL</span>
+          <span class="skill-pill">C/C++</span>
+          <span class="skill-pill">HTML</span>
+          <span class="skill-pill">CSS</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">Scala</span>
+          <span class="skill-pill">R</span>
+        </div>
+        <div class="folder-panel" id="frameworks">
+          <span class="skill-pill">Pandas</span>
+          <span class="skill-pill">NumPy</span>
+          <span class="skill-pill">Scikit-learn</span>
+          <span class="skill-pill">TensorFlow</span>
+          <span class="skill-pill">Matplotlib</span>
+          <span class="skill-pill">React Native</span>
+          <span class="skill-pill">Expo</span>
+          <span class="skill-pill">JavaFX</span>
+          <span class="skill-pill">Node.js</span>
+          <span class="skill-pill">React</span>
+          <span class="skill-pill">Tailwind CSS</span>
+        </div>
+        <div class="folder-panel" id="tools">
+          <span class="skill-pill">Git/Github</span>
+          <span class="skill-pill">PostgreSQL</span>
+          <span class="skill-pill">KiCad</span>
+          <span class="skill-pill">Firebase</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function switchTab(id, el) {
+        document
+          .querySelectorAll(".folder-panel")
+          .forEach((p) => p.classList.remove("active"));
+        document
+          .querySelectorAll(".folder-tab")
+          .forEach((t) => t.classList.remove("active"));
+        document.getElementById(id).classList.add("active");
+        el.classList.add("active");
+      }
+    </script>
+
+    <footer class="contact-footer">
+      <a href="mailto:nikita.neeli@gmail.com"><span>email</span></a>
+      <a href="tel:7703098602"><span>phone</span></a>
+      <a href="https://www.linkedin.com/in/nikita-neeli-6a74b71a5"
+        ><span>linkedin</span></a
+      >
+      <a href="https://github.com/nikitaneeli"><span>github</span></a>
+    </footer>
+
+    <a href="#top" class="back-to-top">↑</a>
+
+    <!-- Typewriter effect for name -->
+    <script>
+      function typeWriter(el, cursor, text, speed = 150) {
+        let i = 0;
+        el.textContent = "";
+        const timer = setInterval(() => {
+          el.textContent += text[i++];
+          if (i === text.length) {
+            clearInterval(timer);
+            // wait 3 blink cycles then hide cursor
+            setTimeout(() => {
+              cursor.style.visibility = "hidden";
+            }, 2100);
+          }
+        }, speed);
+      }
+
+      const nameEl = document.querySelector(".sticky-name");
+      const cursorEl = document.querySelector(".cursor");
+      typeWriter(nameEl, cursorEl, "nikita neeli");
+    </script>
+  </body>
+</html>

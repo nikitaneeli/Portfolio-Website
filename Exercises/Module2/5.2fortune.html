@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 5.2</title>
+    <link href="5.2fortune.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Exercise 5.2: Fortune Teller</h1>
+
+    <input type="text" id="namehere" placeholder="Your name here" /><br />
+    <div id="result"></div>
+    <button onclick="fortune()">your fortune</button>
+  </body>
+</html>
+
+<script>
+  let outcomes = [
+    "you'll win the lottery this week. Hooray!",
+    "you'll get 2 free tickets to your fav artist. Woah!",
+    "an apple will fall on your head. Bonk.",
+    "you'll make a new friend tomorrow. Yippee!",
+    "you'll fall into a deep, dark pit this week. Watch out!",
+    "you'll get casted in an upcoming film. Wow!",
+    "you'll get robbed. Sorry!",
+  ];
+  function fortune() {
+    let name = document.querySelector("#namehere").value;
+    let item = Math.floor(Math.random() * outcomes.length);
+    let result = document.querySelector("#result");
+    result.innerHTML = name + ", your fortune is that " + outcomes[item];
+  }
+</script>

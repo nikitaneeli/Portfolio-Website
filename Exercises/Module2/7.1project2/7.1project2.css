@@ -1,0 +1,31 @@
+body {
+  background-color: rgb(255, 247, 249);
+}
+
+h1 {
+  color: rgb(32, 146, 195);
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  background: radial-gradient(
+    circle,
+    rgb(191, 14, 14),
+    rgb(136, 102, 161),
+    rgb(5, 126, 192)
+  );
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.candidate {
+  width: 30%;
+}
+img {
+  width: 40%;
+  height: auto;
+}

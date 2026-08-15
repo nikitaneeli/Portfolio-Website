@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Part 3</title>
+    <link href="vueThree.css" rel="stylesheet" />
+    <style>
+      img {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="us">
+      <div v-for="each in yall" :style="[myDiv]">
+        <h2>{{each.stu_name}}</h2>
+        <p>{{each.fact}}</p>
+        <img :src="dompart1+each.domain+dompart2" />
+      </div>
+    </div>
+  </body>
+</html>
+<script src="vueThree.js"></script>

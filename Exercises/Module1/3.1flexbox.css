@@ -1,0 +1,166 @@
+body {
+  background-color: rgb(255, 247, 249);
+}
+
+.exercise-title {
+  font-size: 2rem;
+  color: rgb(32, 146, 195);
+}
+
+/* Part 3 */
+body {
+  font-family: sans-serif;
+  width: 90%;
+  max-width: 960px;
+  margin: 10px auto;
+}
+div {
+  height: 100px;
+  border: 1px solid black;
+}
+button {
+  font-size: 18px;
+  line-height: 1.5;
+  width: 15%;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+button:first-child {
+  order: 1;
+}
+
+button:last-child {
+  order: -1;
+}
+
+section {
+  display: flex;
+}
+
+article {
+  flex: 1 100px;
+}
+
+article:nth-of-type(3) {
+  flex: 3 100px;
+  display: flex;
+  flex-flow: column;
+}
+
+article:nth-of-type(3) div:first-child {
+  flex: 1 100px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+button {
+  flex: 1 auto;
+  margin: 5px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Part 1 */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 1rem;
+}
+
+header {
+  background: purple;
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+article {
+  min-width: 125px;
+  padding: 10px;
+  margin: 10px;
+  background: aqua;
+  flex: 1 px;
+}
+
+/*
+article:nth-of-type(3) {
+  flex: 2 100px;
+}
+*/
+
+section {
+  display: flex;
+  /*
+  flex-direction: row;
+  flex-wrap: wrap;
+  */
+  /* flex-flow: row wrap; shorthand for flex direction and wrap*/
+  zoom: 0.8;
+}
+
+/* Part 2 */
+article {
+  flex: 1 100px;
+}
+
+article:nth-of-type(3) {
+  flex: 2 100px;
+}
+
+/* Part 4 */
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+header {
+  background: purple;
+  height: 100px;
+}
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+article {
+  padding: 10px;
+  margin: 10px;
+  background: aqua;
+}
+section {
+  display: flex;
+  zoom: 0.8;
+}
+article {
+  flex: 1 170px;
+}
+article:nth-of-type(3) {
+  flex: 3 170px;
+  display: flex;
+  flex-flow: column;
+}
+article:nth-of-type(3) div:first-child {
+  flex: 1 100px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+button {
+  flex: 1 auto;
+  margin: 5px;
+  font-size: 18px;
+  line-height: 1.5;
+}

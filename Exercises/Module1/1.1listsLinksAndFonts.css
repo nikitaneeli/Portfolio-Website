@@ -1,0 +1,128 @@
+body {
+  background-color: rgb(255, 247, 249);
+}
+
+h1 {
+  color: rgb(32, 146, 195);
+}
+
+ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+ul li {
+  position: relative;
+  padding-left: 20px;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background-image: url(dog.svg);
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+}
+
+.seperated-list li {
+  margin-bottom: 20px;
+}
+
+/* Default Link */
+.link-default {
+  color: rgb(187, 97, 189);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px;
+  border-bottom: 2px solid blueviolet;
+  margin: 10px 0;
+}
+
+/* Visited Link */
+.link-visited {
+  color: grey;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.link-visited:visited {
+  color: brown;
+  text-decoration: line-through;
+}
+
+.visited-page h1 {
+  color: rgb(184, 29, 29);
+}
+
+/* Hover Effect */
+.link-hover {
+  color: darkcyan;
+  text-decoration: none;
+  border-bottom: 3px dashed rgb(28, 217, 217);
+  font-size: 18px;
+  padding: 5px;
+  transition: color 0.2s ease-in-out;
+}
+
+.link-hover:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(162, 196, 185);
+}
+
+/* Focus Effect */
+.link-focus {
+  color: green;
+  text-decoration: none;
+  font-size: 18px;
+  outline: none;
+  padding: 5px;
+  border: 2px solid transparent;
+}
+
+.link-focus:focus {
+  border: 2px solid green;
+  background-color: lightgreen;
+}
+
+/* Active Effect */
+.link-active {
+  color: pink;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.link-active:active {
+  color: white;
+  background-color: salmon;
+}
+
+/* Pill Button */
+.link-pill {
+  display: inline-block;
+  background-color: darkslateblue;
+  color: aliceblue;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 50px;
+  border: 3px solid rgb(226, 171, 43);
+  transition: all 0.3 ease;
+}
+
+.link-pill:hover {
+  background-color: aliceblue;
+  color: rgb(226, 171, 43);
+  border: 3px solid darkslateblue;
+}
+
+p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}

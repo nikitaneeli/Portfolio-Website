@@ -1,0 +1,26 @@
+body {
+  background: linear-gradient(to right, rgb(166, 224, 212), rgb(223, 185, 216));
+}
+
+h1 {
+  color: rgb(32, 146, 195);
+}
+
+h2 {
+  font-size: 50px;
+}
+
+header::first-letter {
+  font-size: 44px;
+}
+
+header::first-line {
+  color: #ff0000;
+  color: rgba(255, 0, 0, 1);
+}
+
+h3 {
+  font-size: 50px;
+  transform: rotate(10deg);
+  margin: 130px;
+}

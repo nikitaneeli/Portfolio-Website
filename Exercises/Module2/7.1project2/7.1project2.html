@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 7.1</title>
+    <link href="7.1project2.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1>Exercise 7.1: Project 2 - Using Arrays</h1>
+    <br />
+    <h2>Presidential Slideshows</h2>
+    <br />
+    <div class="container">
+      <div class="candidate" id="bush">
+        <img id="img1" src="pix/bush.jpg" />
+        <p id="name1">Jeb Bush</p>
+        <button onclick="prevSlide(0)">Previous</button>
+        <button onclick="nextSlide(0)">Next</button>
+      </div>
+      <div class="candidate" id="christie">
+        <img id="img2" src="pix/graham.jpg" />
+        <p id="name2">Lindsey Graham</p>
+        <button onclick="prevSlide(1)">Previous</button>
+        <button onclick="nextSlide(1)">Next</button>
+      </div>
+      <div class="candidate" id="third">
+        <img id="img3" src="pix/perry.jpg" />
+        <p id="name3">Rick Perry</p>
+        <button onclick="prevSlide(2)">Previous</button>
+        <button onclick="nextSlide(2)">Next</button>
+      </div>
+    </div>
+    <span id="response"></span>
+  </body>
+</html>
+<script src="js/7.1project2.js"></script>

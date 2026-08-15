@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Cat Stuff</title>
+    <link href="catsExercise.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="cat-container">
+        <div v-for="eachCat in catArray" :key="eachCat.id" class="cat-card">
+          <p>{{eachCat.name}}</p>
+          <img :src="dpart1 + eachCat.reference_image_id + dpart2" />
+          <p>Energy Level: {{eachCat.energy_level}}</p>
+          <div
+            class="energy-bar"
+            :style="{width: (eachCat.energy_level + 40) + 'px'}"
+          ></div>
+          <p>Stranger Friendly: {{eachCat.stranger_friendly}}</p>
+          <p>Shedding Level: {{eachCat.shedding_level}}</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="js/kitty.js"></script>
